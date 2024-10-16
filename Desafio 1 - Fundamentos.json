@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "e122e997-d508-4e75-93e8-39cf3be690ca",
+		"name": "Desafio 1 - Fundamentos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35290735"
+	},
+	"item": [
+		{
+			"name": "tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3333/tasks",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Teste 2\",\r\n    \"description\": \"teste de task 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/tasks",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"teste atualizado\",\r\n    \"description\": \"teste atualizado de task\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3333/tasks/824587e8-ddea-457d-afe3-f0b580c211b7",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"tasks",
+						"824587e8-ddea-457d-afe3-f0b580c211b7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3333/tasks/6e30e428-9e38-4bb6-bc6d-119bda9bbbdd",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"tasks",
+						"6e30e428-9e38-4bb6-bc6d-119bda9bbbdd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tasks",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "localhost:3333/tasks/824587e8-ddea-457d-afe3-f0b580c211b7/complete",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"tasks",
+						"824587e8-ddea-457d-afe3-f0b580c211b7",
+						"complete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
